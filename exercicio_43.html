@@ -10,25 +10,51 @@
 </head>
 
 <body>
-    <form action="" method="post">
-    palavra<input type="text" id="txtTexto">
+    <div id="caixa">
 
-    <input type="button" value="Exibir" onclick="gerarLista()">
-    </form>
-    
+        <input type="number" id="input" placeholder="digite um numero">
+        <button id="button">salvar</button>
 </body>
 
 <script>
 
-function gerarLista(){
-    let numbers = [];
-    let lista = document.getElementById('txtTexto');
+const button = document.getElementById('button');
+const arr = [];
+
+let div = document.createElement('div');
+let ul = document.createElement('ul');
+div.appendChild(ul);
+document.body.appendChild(div);
+
+button.addEventListener('click',()=>{
+
+    let input = document.getElementById('input').value;
+    arr.push(input);
+    mostrar(arr);
+    document.getElementById('input').value = '';
     
-    let numPares = numbers.map((num, arr) => {if(num % 2 == 0){
-        console.log(num)
+})
+
+function mostrar(){
+
+    let li = document.createElement('li');
+    ul.appendChild(li);
+    arr.map( (item)=> {
+
+        if(item%2 == 0){
+
+            let valor = item;
+            li.innerHTML = valor.bold();
+
+        }else{
+
+            let valor = item;
+            li.innerText = valor;
+
         }
-   
-    }) 
+
+    })
+
 }
 
 
