@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 30 JS</title>
+
+    <style>
+        .destaque{
+            padding: 15px;
+            display: inline-block;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>“E fazendo assim essa lista imensa quem sabe eu melhoro minha lógica de programação”</p>
+    <p>“Puts, não cheguei até aqui, logo farei sempre um código mixuruca”.</p>
+    
+    
+</body>
+
+<script>
+
+let palavra = document.querySelectorAll('p');
+
+for (var i = 0; i < palavra.length; i++){
+    var temAssim = 
+    palavra[i].textContent.toLowerCase().indexOf('assim') >= 0;
+    palavra[i].className = temAssim ? 'destaque' : '';
+}
+
+function formatarPalavra(texto){
+    var arr = texto.split(' ');
+    console.log(arr);
+    
+    if(arr.length > 10){
+        return arr.slice(3, 10).join(' ') + '<b></b>';
+    }
+    
+    return texto;
+}
+
+</script>
+
+</html>

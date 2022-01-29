@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 18 JS</title>
+
+
+    <script>
+
+    let i = 0;
+    let idade = 0;
+    let peso = 0;
+    let sexo = 0;
+    let QtdHom = 0;
+    let QtdMul = 0;            
+    let mediaIdadeHom = 0;
+    let idadeHom = 0;
+    let pesoMul = 0, mediaPesoMul;
+    
+
+    for(i = 1; i <= 10; i++){
+        idade = parseInt(prompt('Sua idade['+i+']:'));
+        peso = parseInt(prompt('Seu peso['+i+']:'));
+        sexo = parseInt(prompt('Sexo: M ou F:'));
+    }
+
+    if (sexo =='M'){
+        QtdHom++;
+        idadeHom += idade;
+    } if (sexo =='F'){
+        QtdMul++;
+        pesoMul += peso;
+    }
+
+    mediaIdadeHom = idadeHom/QtdHom;
+    mediaPesoMul = pesoMul/QtdMul;
+    alert('Total de homens: ' +QtdHom);
+    alert('Total de mulheres: ' +QtdMul);
+    alert('Média das idades dos homens: ' +mediaIdadeHom);
+    alert('Média dos pesos das mulheres: ' +mediaPesoMul);
+
+    </script>
+ 
+    
+</head>
+
+<body>
+
+</body>
+
+
+</html>

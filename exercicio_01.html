@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 01 JS</title>
+
+
+</head>
+<script>
+
+        var n1 = prompt('Digite a primeira nota: ');
+        n1 = parseFloat(n1);
+
+        var n2 = prompt('Digite a segunda nota: ');
+        n2 = parseFloat(n2);
+
+        var n3 = prompt('Digite a terceira nota: ');
+        n3 = parseFloat(n3);
+
+        var n4 = prompt('Digite a quarta nota: ');
+        n4 = parseFloat(n4);
+        
+        if(isNaN(n1) || isNaN(n2) || isNaN(n3) || isNaN(n4)){
+            alert('Somente Numeros')
+        }
+        
+
+        var media = ((n1 + n2 + n3 +n4) / 4);
+        alert('Sua média é: '+ media);    
+
+    </script>
+
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 22 JS</title>
+
+ 
+    
+</head>
+
+<body>
+
+    <span id="cont">11</span> Restantes <br>
+<textarea onkeyup="limite_textarea(this.value)" id="texto"></textarea>
+    
+</body>
+
+<script>
+
+    function limite_textarea(valor){
+        quant = 11;
+        total = valor.length;
+        if(total <= quant){
+            resto = quant - total;
+            document.getElementById('cont').innerHTML = resto;
+        } else {
+            document.getElementById('texto').value = valor.substr(0, quant);
+        }
+    }
+    
+
+</script>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 34 JS</title>
+
+</head>
+
+<body>
+
+    
+</body>
+
+<script>
+
+    let data = new Date();
+
+    function mostrarMes(data){
+        //let dia = data.getDate() < 10 ? '0' + data.getDate() :
+        //data.getDate();
+        let i = 0;
+        let mes = data.getMonth() + 2;
+        mes = mes < 10 ? '0' + mes : mes;
+
+        for(i = 0; i == mes; i++){
+            mes = mes + 2;
+        }
+
+        return + mes + '/' + data.getFullYear();
+    }
+    alert('Estamos no Mês: ' +mostrarMes(data));
+
+</script>
+
+</html>

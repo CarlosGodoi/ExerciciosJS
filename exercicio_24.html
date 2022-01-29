@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 24 JS</title>
+
+ 
+    
+</head>
+
+<body>
+
+<button id="btnVerde">Verde</button>
+<button id="btnVermelho">Vermelho</button>
+
+    
+</body>
+
+<script>
+
+    let verde = document.getElementById('btnVerde');
+    let vermelho = document.getElementById('btnVermelho');
+
+    verde.addEventListener('click', function(event){
+        verde.style.backgroundColor = 'green';
+    })
+
+    vermelho.addEventListener('click', function(event){
+        vermelho.style.backgroundColor = 'red';
+    })
+
+</script>
+
+</html>

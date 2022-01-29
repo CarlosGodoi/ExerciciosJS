@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 28 JS</title>
+
+    <style>
+        h1{
+            color: aqua;
+        }
+        h2{
+            color: brown;
+        }
+        h3{
+            color: chartreuse;
+        }
+        h4{
+            color: crimson;
+        }
+        h5{
+            color: darkmagenta;
+        }
+        h6{
+            color: darkslategrey;
+        }
+    </style>
+    
+</head>
+
+<body>
+
+<div id="divResult"></div>
+    
+</body>
+
+<script>
+let div = document.getElementById('divResult');
+
+let indice1 = 2;
+let indice = 20;
+let indice2 = 5;
+let indice3 = 15;
+
+div.innerHTML = `<h5>Repetição</h5>`
+
+
+for(let i = 0;i < indice1; i++){
+    div.innerHTML +=`<h6>Repetição</h6>`;
+}
+
+for( let i = 0; i < indice; i++){
+    div.innerHTML +=`<h1>Repetição</h1>`;
+}
+
+let x = 0;
+while(x < indice2){
+    console.log(indice2);
+    div.innerHTML +=`<h2>Repetição</h2>`;
+    x++;
+    
+}
+
+let = 0;
+do{
+    div.innerHTML +=`<h3>Repetição</h3>`;
+    x++;
+}while(x < indice3){
+
+}
+
+let arr = [1, 2, 3, 4, 5];
+let i = 0;
+
+arr.forEach(function(i, arr){
+    div.innerHTML += `<h4>Repetição</h4>`
+})
+</script>
+
+</html>

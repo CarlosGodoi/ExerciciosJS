@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 15 JS</title>
+
+
+    <script>
+        let i, altura, sexo, maiorAlt = 0;
+        let menorAlt = 0;
+        let mulher = 0;
+        let homem = 0;
+        let mediaMul = 0;
+        let contaMul = 0;
+        let contaHom = 0;
+
+        for(i = 1; i <= 15; i++){
+            altura = parseInt(prompt('Informe sua altura['+i+']:'));
+            sexo = prompt('sexo: M ou F: ');
+        }
+
+        if(i == 1){
+            menorAlt = altura;
+        } if(altura > maiorAlt){
+            maiorAlt = altura;
+        } if(altura < menorAlt){
+            menorAlt = altura;
+        } if(sexo == 'F'){
+            mulher += altura;
+            contaMul++;
+        } else if(sexo == 'M'){
+            homem += altura;
+            contaHom++;
+        }
+
+        mediaMul = mulher/contaMul;
+
+        alert('A maior altura é: ' +maiorAlt);
+        alert('A menor altura é: ' +menorAlt);
+        alert('A media da mulheres é: ' +mediaMul);
+        alert ('O numero de homens é: ' +contaHom);
+    </script>
+    
+</head>
+
+<body>
+
+</body>
+
+
+</html>
